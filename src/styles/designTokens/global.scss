@@ -1,0 +1,30 @@
+/* Font */
+:root {
+	--font-fallback: "BlinkMacSystemFont", "Segoe UI", "Roboto", "Oxygen",
+		"Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+		"sans-sans";
+}
+
+/* Colour */
+:root {
+	--dark-app-regular-background-regular: #191919;
+	--light-app-regular-background-regular: #f2f2f2;
+}
+
+.text {
+	--dark-text-regular-content-regular: #f8f8f8;
+	--light-text-regular-content-regular: #212020;
+}
+
+/* Miscellaneous */
+:root {
+	--fast-animation-speed: 0.25s;
+}
+
+.border,
+.border-top-left,
+.border-top-right,
+.border-bottom-right,
+.border-bottom-left {
+	--border-regular: 5px;
+}

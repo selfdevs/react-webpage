@@ -1,0 +1,11 @@
+{
+	"compilerOptions": {
+		"paths": {
+			"views/*": ["views/*"],
+			"models/*": ["models/*"],
+			"controllers/*": ["controllers/*"],
+			"styles/*": ["styles/*"],
+			"types/*": ["types/*"]
+		}
+	}
+}
