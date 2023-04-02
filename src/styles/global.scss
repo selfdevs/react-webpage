@@ -56,10 +56,12 @@ a {
 }
 
 body:has(#dark) {
+	color: var(--dark-text-regular-content-regular);
 	background-color: var(--dark-app-regular-background-regular);
 }
 
 body:has(#light) {
+	color: var(--light-text-regular-content-regular);
 	background-color: var(--light-app-regular-background-regular);
 }
 

@@ -1,0 +1,13 @@
+#contentContainer {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	column-gap: 25px;
+	font-size: 20px;
+	font-weight: bold;
+	text-align: center;
+}
+
+.menuElement {
+	justify-content: space-between;
+}

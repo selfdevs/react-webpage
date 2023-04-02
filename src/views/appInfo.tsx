@@ -1,9 +1,6 @@
 import React from "react"
-import { Link } from "react-router-dom"
 
 /// Style imports
-import "styles/designTokens/global.scss"
-import "styles/global.scss"
 
 /// Layouts
 
@@ -17,20 +14,19 @@ import { useInitThemeModel, useThemeModelContext } from "models/theme"
 /// Images
 
 /// Elements
-import { LoadingIcon } from "./loadingIcon/loadingIcon"
 
-export const AppInfo = (): JSX.Element => {
+export const AppInfo = ({
+	children
+}: {
+	children: React.ReactNode
+}): JSX.Element => {
 	const [themeModel, setThemeModel] = useInitThemeModel()
 
 	return (
 		<div>
 			<useThemeModelContext.Provider
 				value={{ data: themeModel, setThemeModel }}>
-				<div id={`${themeModel.currentColourMode}`}>
-					<Link to="about">
-						<LoadingIcon />
-					</Link>
-				</div>
+				<div id={`${themeModel.currentColourMode}`}>{children}</div>
 			</useThemeModelContext.Provider>
 		</div>
 	)
