@@ -1,11 +1,12 @@
 import React from "react"
 import ReactDOM from "react-dom/client"
+import { BrowserRouter, Routes, Route } from "react-router-dom"
+import { Link } from "react-router-dom"
 
 /// Style imports
 
 /// Layouts
 import { AppInfo } from "./views/appInfo"
-import { LoadingIcon } from "./views/loadingIcon/loadingIcon"
 
 /// Controller
 
@@ -19,7 +20,10 @@ import { LoadingIcon } from "./views/loadingIcon/loadingIcon"
 
 const root = ReactDOM.createRoot(document.getElementById("root") as HTMLElement)
 root.render(
-	<React.StrictMode>
-		<AppInfo>{LoadingIcon()}</AppInfo>
-	</React.StrictMode>
+	<BrowserRouter>
+		<Routes>
+			<Route path="/" element={<AppInfo />} />
+			<Route path="about" element={<Link to="/">Back to home</Link>} />
+		</Routes>
+	</BrowserRouter>
 )
