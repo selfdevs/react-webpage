@@ -1,5 +1,7 @@
 # Self.Dev
 
+![License](https://img.shields.io/badge/license-MIT-green)
+
 This is the website for the Self Dev community written in React and Typescript.
 
 ## Table of Contents
